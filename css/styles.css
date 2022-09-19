@@ -151,6 +151,10 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header .link-nav {
+  color: var(--main-txt-cl);
+}
+
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-txt-cl);
@@ -523,12 +527,6 @@ img {
   color: var(--white-txt-cl-60);
 }
 
-.footer .link {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-txt-cl);
@@ -585,8 +583,6 @@ img {
   text-transform: uppercase;
 
   color: var(--white-txt-cl);
-
-  /* margin-bottom: 20px; */
 }
 
 .subscription-group {
@@ -939,6 +935,14 @@ img {
   padding-right: 16px;
   padding-bottom: 12px;
   padding-left: 16px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-comment:focus {
+  border-color: var(--accent-bg-cl);
 }
 
 .register-form-agreement {
